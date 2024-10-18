@@ -1,0 +1,120 @@
+html, body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: none;
+    padding: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+    position: absolute;
+    background: white;
+    color: red;
+    top: 10px;
+    left: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive; /* Use the cartoonish font */
+    background-color: #282c34;
+    color: #ebe1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3f47;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.settings-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.content-section {
+    display: block;
+    margin-top: 20px;
+}
+
+.content-section h2 {
+    margin-bottom: 10px;
+}
+
+.action-button {
+    background-color: #21a0f6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden:not(.hidden) {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#fetching_loading {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fa4242;
+    font-weight: bold;
+}
+
+
+#content {
+    background-color: #0000005e;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 15px;
+}

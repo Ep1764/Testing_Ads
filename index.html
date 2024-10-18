@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Homepage</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quorixor</h1>
+            <button class="settings-button">⚙️ Settings</button>
+        </header>
+        
+        <nav>
+            <button class="nav-button" onclick="showSection('play')">Play</button>
+            <button class="nav-button" onclick="showSection('tutorial')">Tutorial</button>
+            <button class="nav-button" onclick="showSection('about')">About</button>
+            <button class="nav-button" onclick="showSection('socials')">Socials</button>
+            <button class="nav-button" onclick="showSection('logs')">Logs</button>
+        </nav>
+
+        <main id="content">
+            <section id="play" class="content-section">
+                <h2>Play the Game</h2>
+                <p>Quick Join, or create private/public parties!</p>
+                <button class="action-button" id="start-game">Start Game</button>
+                <div id="fetching_loading" class="hidden">Fetching lobbies...</div>
+            </section>
+
+            <section id="tutorial" class="content-section hidden">
+                <h2>Tutorial</h2>
+                <p>Learn the basics of the game mechanics and controls.</p>
+                <button class="action-button">View Tutorial</button>
+            </section>
+
+            <section id="about" class="content-section hidden">
+                <h2>About the Game</h2>
+                <p>Find out more about the game's story and development.</p>
+            </section>
+
+            <section id="socials" class="content-section hidden">
+                <h2>Follow Us</h2>
+                <p>Stay connected through our social media channels!</p>
+            </section>
+
+            <section id="logs" class="content-section hidden">
+                <h2>Logs</h2>
+                <p>Check out the latest updates and patches for the game.</p>
+            </section>
+
+            <section id="settings" class="content-section hidden">
+                <h2>Settings</h2>
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+                <br>
+                <button class="action-button" onclick="closeSettings()">Close</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
